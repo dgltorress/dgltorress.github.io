@@ -1,0 +1,258 @@
+/* VARIABLES */
+/* --------------------------------------------------- */
+
+:root{
+    --c0:#0c1021;
+    --c1:#e0ca3c;
+    --c2:#93b7be;
+    --c3:#048a81;
+
+    --c00:#111731;
+
+    --c4:#030418;
+    --c5:#141B41;
+    --c6:#306BAC;
+    --c7:#6F9CEB;
+    --c8:#98B9F2;
+    --c9:#918EF4;
+
+    --ct:#DDD;
+    --ct2:#222;
+}
+
+/* ................................................... */
+
+
+
+/* ALL-ENCOMPASSING RULES */
+/* --------------------------------------------------- */
+
+*{
+    box-sizing: border-box;
+    color: var(--ct);
+    font-family: 'Nanum Gothic',Arial,Helvetica,sans-serif;
+    font-size: 1rem;
+}
+
+/* ................................................... */
+
+
+
+/* TAG RULES */
+/* --------------------------------------------------- */
+
+html{
+    font-size:16px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--c0);
+
+    border: .75rem solid var(--c2);
+
+    margin: 0;
+}
+body>*{
+    padding:3em;
+}
+body>header,body>footer{
+    background-color: var(--c00);
+    box-shadow: 0 1rem 3rem 1rem var(--c0);
+
+    margin: 0;
+}
+body>header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    clip-path: polygon( 0 0 , 100% 0 , 100% 100% , 50% 60% , 0 100% );
+
+    padding-inline: 5rem;
+}
+body>header>nav a{
+    font-family: 'Nunito',Arial,Helvetica,sans-serif;
+    font-size: 1.3rem;
+}
+body>header>nav>ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    padding-left: 0;
+    margin:2rem 0;
+}
+body>header>nav>ul>li{
+    padding:.5rem 1rem;
+    margin:.5rem;
+    margin-left:1rem;
+}
+body>header>nav>ul>li:first-child{
+    list-style:none;
+}
+body>header>nav>ul>li>a{
+    padding-bottom:.4rem;
+}
+body>header>nav>ul>li>a:hover{
+    border-bottom: solid .4rem var(--c3);
+}
+body>main{
+    max-width: 60%;
+
+    margin:auto;
+}
+body>footer{
+    font-size: 1.2rem;
+    text-align: center;
+
+    clip-path: polygon( 50% 0 , 100% 40% , 100% 100% , 0 100% , 0 40% );
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-size: 2.488rem;
+}
+h2{
+    font-size: 2.074rem;
+    font-variant: small-caps;
+}
+h3{
+    font-size: 1.728rem;
+}
+h4{
+    font-size: 1.44rem;
+}
+h5{
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+}
+a:not(.alink){
+    color: var(--c8);
+    transition:all ease-in-out .1s;
+}
+a:not(.alink):hover{
+    color: var(--c3);
+}
+
+
+/* ................................................... */
+
+
+
+/* ID RULES */
+/* --------------------------------------------------- */
+
+#contacts>ul>li>a:first-child:before{ content: "\f113"; }
+
+p#catch{
+    max-width: 90%;
+    
+    font-family: 'Rajdhani',Arial,Helvetica,sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    
+    margin:auto;
+}
+
+/* ................................................... */
+
+
+
+/* CLASS RULES */
+/* --------------------------------------------------- */
+
+.afterline{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+.afterline::after{
+    content: "";
+    width: 30%;
+    height: .05rem;
+
+    background-color: var(--c3);
+
+    margin-left: 2rem;
+}
+
+.alink{
+    background-color: var(--c6);
+
+    font-weight: bold;
+
+    border-radius:10rem;
+    box-shadow: 0 .4rem .4rem .1rem var(--c0);
+
+    padding:1.5rem 3rem;
+    margin:.5rem;
+}
+.alink:hover{
+    background-color: var(--c9);
+    color: var(--ct2);
+    transition: all ease-in-out .1s;
+}
+
+article.bachproj{
+    display:inline-block;
+    background-color: var(--c00);
+
+    box-shadow: 0 1rem 3rem 1rem var(--c0);
+
+    border-radius: .4rem;
+}
+div.project:nth-child(odd)>div>article.bachproj{
+    transform: rotate(.5deg);
+}
+div.project:nth-child(even)>div>article.bachproj{
+    transform: rotate(-.5deg);
+}
+article.bachproj{
+    padding:3rem;
+}
+article.bachproj>h4{
+    font-weight:bold;
+    margin-top:0;
+}
+article.bachproj>a{
+    width:max-content;
+    display:block;
+    margin-top:3rem;
+    font-size:1.3rem;
+
+    margin-inline:auto;
+}
+
+ul.techlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    list-style: none;
+
+    padding-left: 0;
+    margin:2rem 0;
+}
+ul.techlist>li{
+    background-color: var(--c3);
+
+    border-radius:2rem;
+
+    padding:.5rem 1rem;
+    margin:.5rem;
+}
+
+/* ................................................... */
