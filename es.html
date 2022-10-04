@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+    <!-- I can see you -->
     <head>
         <!--Basic-->
         <title>Daniel Giménez López-Torres - Estudiante de Ingeniería Multimedia</title>
-	    <meta name="description" content="Daniel Giménez. Estudiante de Ingeniería Multimedia, actualmente especializándose en gestión de contenidos. Desarrollo web y software.">
+	    <meta name="description" content="Portfolio de Daniel Giménez. Estudiante de Ingeniería Multimedia, actualmente especializándose en gestión de contenidos. Desarrollo web y software.">
 	    <meta name="author" content="Daniel Giménez López-Torres">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -47,32 +48,37 @@
         <script src="code.js"></script>
     </head>
     <body>
+        <!-- Header -->
         <header>
             <h1>Daniel Giménez López-Torres</h1>
             <nav>
                 <ul>
-                    <li><a href="#experiences">Experiencia</a></li>
+                    <li><a href="#experiences" style="display:none;">Experiencia</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#educations">Educación</a></li>
                     <li><a href="#cvs">CV</a></li>
                     <li><a href="#contacts">Contacto</a></li>
+                    <li><a href="index.html">EN</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- Catchphrase -->
         <p id="catch">Soy un estudiante de Ingeniería Multimedia, actualmente especializándome en gestión de contenidos. Busco expandir mis horizontes aportando mi visión de diseño, desarrollo web y software.</p>
         <main>
             <div>
-                <section id="experiences">
+                <!-- Experience -->
+                <section id="experiences" style="display:none;">
                     <h2 class="afterline">Experiencia</h2>
-                    
                 </section>
+                <!-- Projects -->
                 <section id="projects">
-                    <h2>Proyectos</h2>
+                    <h2 class="afterline">Proyectos</h2>
+                    <!-- Student projects -->
                     <section>
                         <h3>De Grado</h3>
-                        <div class="project">
+                        <div class="bproject">
                             <div>
-                                <article class="bachproj">
+                                <article class="bproject">
                                     <h4>Interfaz accesible para un horno</h4>
                                     <p>Una simulación de una interfaz <strong>accesible</strong> para un horno adaptada a una pantalla panorámica.</p>
                                     <p>Está pensada para ser lo más <strong>simple, compacta e intuitiva</strong> posible.</p>
@@ -81,19 +87,19 @@
                                         <li>CSS</li>
                                         <li>JavaScript</li>
                                     </ul>
-                                    <a class="alink aexternal" href="" target="_blank">Pruébala</a>
+                                    <a class="alink ainternal" href="horno/index.html" target="_blank">Pruébala</a>
                                 </article>
                             </div>
                             <div>
-                                <img src="" alt="" title="">
+                                <img src="img/ih_interfaz.jpg" alt="Interfaz del horno" class="expandable" title="Interfaz del horno">
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="bproject">
                             <div>
-                                <article class="bachproj">
+                                <article class="bproject">
                                     <h4>GameBox</h4>
-                                    <p>Un sitio web de prueba para una <strong>tienda de venta de videojuegos en físico</strong>, listo para integrar una <strong>pasarela de pago</strong>.</p>
-                                    <p>Contiene <strong>múltiples extensiones propias</strong>, como CPTs, pestañas nuevas en el <em lang="en">dashboard</em>, roles y capacidades, etc.</p>
+                                    <p>Un sitio web de prueba para una <strong>tienda <em>online</em> de venta de videojuegos en físico</strong>, listo para integrar una <strong>pasarela de pago</strong>.</p>
+                                    <p>Contiene <strong>múltiples extensiones propias</strong>, como CPTs, temas hijos, pestañas personalizadas en el <em lang="en">dashboard</em>, roles y capacidades específicos, etc.</p>
                                     <ul class="techlist">
                                         <li>WordPress</li>
                                         <li>WooCommerce</li>
@@ -104,73 +110,115 @@
                                         <li>CSS</li>
                                         <li>JavaScript</li>
                                     </ul>
-                                    <a class="alink aexternal" href="" target="_blank">Descarga el instalador</a>
+                                    <a class="alink aexternal" href="https://github.com/dgltorress/proyectos-grado/tree/master/GameBox" target="_blank">Descarga el instalador</a>
                                 </article>
                             </div>
                             <div>
-                                <img src="" alt="" title="">
+                                <img src="img/gb_store.jpg" alt="Página de la tienda de GameBox" class="expandable" title="Página de la tienda de GameBox">
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="bproject">
                             <div>
-                                <article class="bachproj">
-                                    <h4></h4>
-                                    <p></p>
-                                    <a class="alink aexternal" href="" target="_blank"></a>
+                                <article class="bproject">
+                                    <h4>Pictures &amp; Images</h4>
+                                    <p>Un producto mínimo viable para un sitio web de <strong>gestión de álbumes y fotos</strong>. Enfocado para ser <strong>adaptable</strong>.</p>
+                                    <p>Cuenta con un <strong>sistema de usuarios</strong> funcional, donde cada usuario puede <strong>subir sus propias fotos</strong> y categorizarlas en álbumes.</p>
+                                    <ul class="techlist">
+                                        <li>PHP</li>
+                                        <li>MySQL</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <a class="alink ainternal" href="pi-front/index.html" target="_blank">Prueba el <em>front</em></a>
+                                    <a class="alink aexternal" href="https://github.com/dgltorress/proyectos-grado/tree/master/PicturesAndImagesFull" target="_blank">Descarga la versión completa</a>
                                 </article>
                             </div>
                             <div>
-                                <img src="" alt="" title="">
+                                <img src="img/pi_home.jpg" alt="Página principal de Pictures &amp; Images" class="expandable" title="Página principal de Pictures &amp; Images">
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="bproject">
                             <div>
-                                <article class="bachproj">
-                                    <h4></h4>
-                                    <p></p>
-                                    <a class="alink aexternal" href="" target="_blank"></a>
+                                <article class="bproject">
+                                    <h4>Against All</h4>
+                                    <p>Un <strong>juego multijugador <em>online</em></strong> de terminal que enfrenta a un número de jugadores en un todos contra todos.</p>
+                                    <p>Incluye un <strong>API REST</strong> que sirve los datos de la partida, así como un <strong><em>front</em></strong> que permite monitorizarla desde el navegador.</p>
+                                    <ul class="techlist">
+                                        <li>Java</li>
+                                        <li>Sockets</li>
+                                        <li>REST</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                    <a class="alink ainternal" href="against-all-front/index.html" target="_blank">Prueba el <em>front</em></a>
+                                    <a class="alink aexternal" href="https://github.com/dgltorress/proyectos-grado/tree/master/AgainstAll_v2.0" target="_blank">Descarga todos los componentes</a>
                                 </article>
                             </div>
                             <div>
-                                <img src="" alt="" title="">
+                                <img src="img/aa_frontp.jpg" alt="Front de Against All" class="expandable" title="Front de Against All">
                             </div>
                         </div>
                     </section>
                 </section>
+                <!-- Education -->
                 <section id="educations">
-                    <h2>Educación</h2>
-                    
+                    <h2 class="afterline">Educación</h2>
+                    <div class="education">
+                        <article>
+                            <header>
+                                <h3>Grado en Ingeniería Multimedia</h3>
+                                <span><time datetime="2019-09">sep. 2019</time> - <em title="Fecha de finalización prevista"><time datetime="2023-08">ago. 2023</time></em></span>
+                            </header>
+                            <a href="https://web.ua.es/es/grados/grado-en-ingenieria-multimedia/" target="_blank" title="Página del Grado en Ingeniería Multimedia">
+                                <img src="img/e_ua.jpg" alt="Icono de la Universidad de Alicante">
+                                Universidad de Alicante
+                            </a>
+                            <footer>
+                                <p>Especializándose en Gestión de Contenidos.</p>
+                            </footer>
+                        </article>
+                    </div>
+                    <div class="education">
+                        <article>
+                            <header>
+                                <h3>Bachillerato</h3>
+                                <span><time datetime="2019-06">jun. 2019</time></span>
+                            </header>
+                            <a href="https://alicante.salesianos.edu/" target="_blank">
+                                <img src="img/e_salesianos.png" alt="Icono del colegio Salesianos Alicante">
+                                Colegio Salesianos Alicante
+                            </a>
+                            <footer>
+                                <p>Itinerario de Ciencias Sociales.</p>
+                            </footer>
+                        </article>
+                    </div>
                 </section>
+                <!-- Resume -->
                 <section id="cvs">
-                    <h2>Descarga mi CV</h2>
-                    <a href="[PONER URL CUANDO LA TENGA]" target="_blank">Echa un vistazo a mi currículum</a>
+                    <h2 class="afterline">Descarga mi CV</h2>
+                    <div>
+                        <a class="alink aexternal" href="[PONER URL CUANDO LA TENGA]" target="_blank">Echa un vistazo a mi CV</a>
+                    </div>
                 </section>
             </div>
         </main>
         <footer>
+            <!-- Contact information -->
             <div id="contacts">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/dgltorress/" target="_blank" rel="me" title="Daniel en LinkedIn"></a></li>
-                    <li><a href="https://github.com/dgltorress" target="_blank" rel="me" title="Daniel en GitHub"></a></li>
+                    <li><a id="clinkedin" href="https://www.linkedin.com/in/dgltorress/" target="_blank" rel="me" title="Daniel en LinkedIn"></a></li>
+                    <li><a id="cgithub" href="https://github.com/dgltorress" target="_blank" rel="me" title="Daniel en GitHub"></a></li>
                 </ul>
                 <a href="mailto:dgltorress@gmail.com" rel="me" title="Mi email">dgltorress@gmail.com</a>
             </div>
             <p>&copy;
                 <time id="curYear" datetime="2022">2022</time>
-                <script>
-                    // Gets the current year from the client's machine.
-                    let timeElement = document.getElementById( 'curYear' ) ,
-                        curYear     = new Date().getFullYear().toString() ;
-
-                    timeElement.innerText = curYear;
-                    timeElement.setAttribute( 'DATETIME' , curYear );
-
-                    // Self deletes.
-                    timeElement.nextElementSibling.remove();
-                </script>
-                Daniel Giménez
+                Daniel Giménez López-Torres
             </p>
-            <a href="#top" title="Volver a arriba">regreso al monke</a>
+            <a id="backTop" class="alink" href="#top" title="Volver al principio"></a>
         </footer>
     </body>
 </html>

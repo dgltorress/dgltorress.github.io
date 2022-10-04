@@ -1,3 +1,7 @@
+/**
+ * @author DANIEL GIMÉNEZ LÓPEZ-TORRES
+ */
+
 /* VARIABLES */
 /* --------------------------------------------------- */
 
@@ -8,6 +12,7 @@
     --c3:#048a81;
 
     --c00:#111731;
+    --c01:#444A75;
 
     --c4:#030418;
     --c5:#141B41;
@@ -30,7 +35,7 @@
 *{
     box-sizing: border-box;
     color: var(--ct);
-    font-family: 'Nanum Gothic',Arial,Helvetica,sans-serif;
+    font-family: 'Nunito Sans',Arial,Helvetica,sans-serif;
     font-size: 1rem;
 }
 
@@ -42,11 +47,13 @@
 /* --------------------------------------------------- */
 
 html{
-    font-size:16px;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
 body{
+    width: 100%;
+
     background-color: var(--c0);
 
     border: .75rem solid var(--c2);
@@ -54,7 +61,7 @@ body{
     margin: 0;
 }
 body>*{
-    padding:3em;
+    padding:3rem;
 }
 body>header,body>footer{
     background-color: var(--c00);
@@ -68,7 +75,7 @@ body>header{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    clip-path: polygon( 0 0 , 100% 0 , 100% 100% , 50% 60% , 0 100% );
+    clip-path: polygon( 0 0 , 100% 0 , 100% 100% , 50% 80% , 0 100% );
 
     padding-inline: 5rem;
 }
@@ -139,7 +146,7 @@ body>footer{
     font-size: 1.2rem;
     text-align: center;
 
-    clip-path: polygon( 50% 0 , 100% 40% , 100% 100% , 0 100% , 0 40% );
+    clip-path: polygon( 50% 0 , 100% 20% , 100% 100% , 0 100% , 0 20% );
 }
 
 h1,h2,h3,h4,h5{
@@ -174,15 +181,12 @@ a:not(.alink):hover{
     color: var(--c3);
 }
 
-
 /* ................................................... */
 
 
 
 /* ID RULES */
 /* --------------------------------------------------- */
-
-#contacts>ul>li>a:first-child:before{ content: "\f113"; }
 
 p#catch{
     max-width: 90%;
@@ -194,12 +198,109 @@ p#catch{
     margin:auto;
 }
 
+div#mainShowcase{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.6);
+}
+div#mainShowcase>button{
+    position: fixed;
+    top: 5%;
+    right: 15%;
+
+    vertical-align: middle;
+
+    border: none;
+    background: none;
+}
+div#mainShowcase>button::after{
+    content: "X";
+    font-family: 'Montserrat',Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+
+    color: var(--ct);
+}
+div#mainShowcase>button:hover:after{
+    color: #bbb;
+    cursor:pointer;
+
+    transition: all ease-in-out .1s;
+}
+div#mainShowcase>img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#cvs{
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+#cvs>div{
+    padding-top: 3rem;
+}
+
+div#contacts>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    padding: 0;
+}
+div#contacts>ul>li{
+    margin: 0 1rem;
+}
+#clinkedin,#cgithub{
+    display: inline-block;
+    width: 2rem;
+}
+#clinkedin::after{ content: url(svg/linkedin.svg); }
+#cgithub::after{ content: url(svg/github.svg); }
+
+a#backTop{
+    padding: .1em .8rem;
+
+    font-size: 3rem;
+}
+a#backTop::after{
+    content: "\27A4";
+    display: inline-block;
+    transform: rotate(-90deg);
+
+    padding-bottom: .1rem;
+}
+
 /* ................................................... */
 
 
 
 /* CLASS RULES */
 /* --------------------------------------------------- */
+
+div.experience,div.bproject,div.education{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 0;
+
+    margin: 3rem auto;
+}
 
 .afterline{
     display: flex;
@@ -210,8 +311,8 @@ p#catch{
 }
 .afterline::after{
     content: "";
-    width: 30%;
-    height: .05rem;
+    width: 15rem;
+    height: .1rem;
 
     background-color: var(--c3);
 
@@ -230,34 +331,132 @@ p#catch{
     margin:.5rem;
 }
 .alink:hover{
-    background-color: var(--c9);
-    color: var(--ct2);
+    background-color: var(--c01);
     transition: all ease-in-out .1s;
 }
+.ainternal::after{
+    content: "\27A7";
+    transition: all ease-in-out .1s;
 
-article.bachproj{
-    display:inline-block;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+.ainternal:hover:after{
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+.aexternal::after{
+    content: url(svg/external.svg);
+    display: inline-block;
+    transition: all ease-in-out .1s;
+
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+/* Student project */
+
+div.bproject:nth-child(odd){
+    flex-direction: row-reverse;
+}
+div.bproject>div:first-child{
+    flex: 1.5 1 0;
+}
+div.bproject>div:last-child{
+    flex: 1 1 0;
+}
+div.bproject img{
+    width: 100%;
+    height: auto;
+
+    border-radius: 1rem;
+
+    outline: 1px solid var(--c3);
+    outline-offset: 2rem;
+
+    box-shadow: 0 0 .8rem .1rem var(--c00);
+}
+div.bproject img:hover{
+    cursor: pointer;
+    outline-offset: 1rem;
+    transition: all ease-in-out .1s;
+}
+div.bproject:nth-child(even) img{
+    margin-left: 4rem;
+    transform: rotate(.5deg);
+}
+div.bproject:nth-child(odd) img{
+    transform: rotate(-.5deg);
+}
+div.bproject:nth-child(odd) article{
+    margin-left: 5rem;
+}
+
+article.bproject{
+    display: inline-block;
     background-color: var(--c00);
 
     box-shadow: 0 1rem 3rem 1rem var(--c0);
 
     border-radius: .4rem;
+    padding: 3rem;
 }
-article.bachproj{
-    padding:3rem;
+article.bproject>h4{
+    font-weight: bold;
+    margin-top: 0;
 }
-article.bachproj>h4{
-    font-weight:bold;
-    margin-top:0;
-}
-article.bachproj>a{
-    width:max-content;
-    display:block;
-    margin-top:3rem;
-    font-size:1.3rem;
+article.bproject>a{
+    width: max-content;
+    display: block;
+    margin-top: 3rem;
+    font-size: 1.3rem;
 
     margin-inline:auto;
 }
+article.bproject>a *{
+    font-size: 1.3rem;
+}
+
+/* -------------------- */
+
+/* Education */
+
+div.education>article{
+    width: 100%;
+
+    border-left: .75rem solid var(--c3);
+    padding-left: 2rem;
+}
+div.education>article header,div.education>article>a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.education>article header{
+    justify-content: space-between;
+}
+div.education>article>a{
+    font-size: 1.3rem;
+}
+div.education>article img{
+    width: 3rem;
+    height: auto;
+
+    border-radius: .1rem;
+
+    margin-right: 2rem;
+}
+div.education>article>footer{
+    font-size: 1.6rem;
+
+    margin-top: 2rem;
+}
+
+/* -------------------- */
+
+/* Tech list */
+/* -------------------- */
 
 ul.techlist{
     display: flex;
@@ -270,13 +469,15 @@ ul.techlist{
     overflow: hidden;
 
     padding-left: 0;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
 ul.techlist>li{
     background-color: var(--c3);
 
-    padding:.5rem 1rem;
-    margin:.5rem;
+    font-weight: bold;
+
+    padding: .5rem 1rem;
+    margin: .5rem;
 
     transform: translateZ(0)
 }
@@ -287,5 +488,66 @@ ul.techlist>li:nth-child(even){
     clip-path: polygon( 6% 2% , 95% 10% , 92% 99% , 9% 97% );
 }
 
+/* -------------------- */
+
 
 /* ................................................... */
+
+
+/* RESPONSIVE */
+/* --------------------------------------------------- */
+
+@media only screen and (max-width: 576px){
+    html{
+        font-size: 12px;
+    }
+    body>*{
+        padding: 1rem;
+    }
+    body>header{
+        clip-path: polygon( 0 0 , 100% 0 , 100% 90% , 50% 100% , 0 90% ) !important;
+    }
+    body>main{
+        max-width: 90%;
+    }
+    body>main::before{
+        width: 0;
+    }
+    article.bproject{
+        padding: 1rem;
+    }
+    .afterline::after{
+        width: 0;
+    }
+    .aexternal::after{
+        min-width: 0;
+        width: .2rem;
+    }
+}
+/*@media only screen and (max-width: 768px){
+
+}*/
+/*@media only screen and (max-width: 992px){
+
+}*/
+/*@media only screen and (max-width: 1200px){
+
+}*/
+@media only screen and (max-width: 1500px){
+    body>header{
+        flex-direction: column !important;
+        margin-bottom: 2rem;
+    }
+    div.bproject{
+        flex-direction: column !important;
+    }
+    div.bproject article{
+        margin: 0 !important;
+    }
+    div.bproject img{
+        transform: none !important;
+        margin: 4rem 0 5rem 0 !important;
+    }
+}
+
+/* --------------------------------------------------- */

@@ -1,0 +1,39 @@
+=========================== HTML ===========================
+
+<!--
+ARCHIVO: cabecera.txt
+Una plantilla para la cabecera de todos los ficheros con codigo
+
+AUTORES: Ian Bucu y Daniel Gimenez el 17/09/2021
+
+REVISIONES:
+17/09/2021 - Revision de ejemplo anadida
+-->
+
+
+
+=========================== CSS/JavaScript ===========================
+
+/*
+ARCHIVO: cabecera.txt
+Una plantilla para la cabecera de todos los ficheros con codigo
+
+AUTORES: Ian Bucu y Daniel Gimenez el 17/09/2021
+
+REVISIONES:
+17/09/2021 - Revision de ejemplo anadida
+/*
+
+
+
+=========================== PHP ===========================
+
+/**************************
+ARCHIVO: cabecera.txt
+Una plantilla para la cabecera de todos los ficheros con codigo
+
+AUTORES: Ian Bucu y Daniel Gimenez el 17/09/2021
+
+REVISIONES:
+17/09/2021 - Revision de ejemplo anadida
+*****************************/
