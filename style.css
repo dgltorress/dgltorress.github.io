@@ -121,10 +121,10 @@ body>header>nav>ul>li>a::after{
     margin-top: .4rem;
 }
 body>header>nav>ul>li>a:hover:before{
-    transform: scaleX( 110% );
+    transform: scaleX( 1.1 );
 }
 body>header>nav>ul>li>a:hover:after{
-    transform: scaleX( 120% );
+    transform: scaleX( 1.2 );
 }
 body>main{
     max-width: 60%;
@@ -140,7 +140,7 @@ body>main::before{
 
     margin-bottom: 7rem;
     
-    transform: scaleX( 130% );
+    transform: scaleX( 1.3 );
 }
 body>footer{
     font-size: 1.2rem;
