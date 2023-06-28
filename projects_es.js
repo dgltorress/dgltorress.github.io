@@ -5,7 +5,7 @@ export const projects = {
     student: [
         {
             title: "HikIn",
-            description: "<p>A <strong>social network for hikers</strong>. Minimum viable product and end result of my <strong>Bachelor's Thesis</strong>.</p><p>Designed as a <strong>complete and independently functional</strong> software system, following a <a href=\"https://www.ibm.com/topics/three-tier-architecture\" target=\"_blank\"><strong>three-tier architecture</strong></a>, and composed by a hybrid mobile application, a server-side web API and a relational database.</p>",
+            description: "<p>Una <strong>red social para senderistas</strong>. Proyecto mínimo viable y resultado final de mi <strong>Trabajo de Fin de Grado</strong>.</p><p>Diseñado para ser un sistema software <strong>completo e independientemente funcional</strong>, siguiendo la <a href=\"https://www.ibm.com/es-es/topics/three-tier-architecture\" target=\"_blank\"><strong>arquitectura de tres niveles</strong></a>, y compuesto por una aplicación híbrida para móviles, una API web de servidor y una base de datos relacional.</p>",
             techlist: [
                 "Angular",
                 "Ionic",
@@ -16,24 +16,24 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "Bachelor's Thesis",
+                    title: "Memoria",
                     href: "http://hdl.handle.net/10045/135511",
                     external: true
                 },
                 {
-                    title: "Repository",
+                    title: "Repositorio",
                     href: "https://github.com/dgltorress/tfg-hikin",
                     external: true
                 }
             ],
             img: {
                 src: "img/hikin.png",
-                aria: "Preview of HikIn's screens"
+                aria: "Previsualización de las pantallas de HikIn"
             }
         },
         {
             title: "Solv3D",
-            description: "<p>A cross-platform web tool aimed at <strong>helping students grasp abstract physics concepts</strong> by allowing teachers to easily create <strong>real-time simulations of textbook problems</strong> in a <strong>three-dimensional environment</strong>.</p><p>This application was co-created with four fellow students as part of a <strong>team project</strong>.</p><p>Among other particularities, the team assumed <strong>full responsibility over the security of our servers</strong> and <strong>a 3D engine was created from scratch</strong> using only pure WebGL and a math library.</p>",
+            description: "<p>Una herramienta web multiplataforma orientada a <strong>ayudar a estudiantes a comprender conceptos abstractos de física</strong> permitiendo a los profesores crear <strong>simulaciones de problemas del libro en tiempo real</strong> en un <strong>entorno tridimensional</strong>.</p><p>Esta aplicación se creó junto a cuatro compañeros de la carrera como parte de un <strong>proyecto grupal</strong>.</p><p>Entre sus peculiaridades, el equipo asumió <strong>toda la responsabilidad sobre la securización de nuestro servidor</strong> y <strong>se creó un motor 3D desde cero</strong> utilizando únicamente WebGL puro y una librería matemática.</p>",
             techlist: [
                 "Angular",
                 "Node",
@@ -45,29 +45,29 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "Final showcase",
+                    title: "Demostración final",
                     href: "https://youtu.be/Vkbv5SNLKVI?t=4465",
                     external: true
                 },
                 {
-                    title: "Preliminary showcase",
+                    title: "Demostración preliminar",
                     href: "https://youtu.be/o2DyAE0BBg8?t=2009",
                     external: true
                 },
                 {
-                    title: "University project page",
+                    title: "Página universitaria del proyecto",
                     href: "https://eps.ua.es/es/ingenieria-multimedia/gestioncontenidos/proyectos22-23/proyecto-solv3d.html",
                     external: true
                 }
             ],
             img: {
                 src: "img/solv3d.png",
-                aria: "Solv3D's environment"
+                aria: "Entorno de Solv3D"
             }
         },
         {
-            title: "Accessible oven interface",
-            description: "<p>A prototype of an <strong>accessible</strong> interface for an oven, made to fit a landscape screen.</p><p>It was made with <strong>simplicity, compactness and intuitiveness</strong> in mind.</p>",
+            title: "Interfaz accesible para un horno",
+            description: "<p>Una simulación de una interfaz <strong>accesible</strong> para un horno adaptada a una pantalla panorámica.</p><p>Está pensada para ser lo más <strong>simple, compacta e intuitiva</strong> posible.</p>",
             techlist: [
                 "HTML",
                 "CSS",
@@ -75,19 +75,19 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "Online version",
+                    title: "Versión online",
                     href: "projs/horno/index.html",
                     external: false
                 }
             ],
             img: {
                 src: "img/ih_interfaz.jpg",
-                aria: "Oven interface"
+                aria: "Interfaz del horno"
             }
         },
         {
             title: "GameBox",
-            description: "<p>A test website made to host an <strong>online shop carrying physical video games</strong>, payment-gateway-ready.</p><p>It features multiple <strong>add-ons</strong> of my own: CPTs, child themes, custom tabs, and specific roles and capabilities.</p>",
+            description: "<p>Un sitio web de prueba para una <strong>tienda <em lang=\"en\">online</em> de venta de videojuegos en físico</strong>, listo para integrar una <strong>pasarela de pago</strong>.</p><p>Contiene <strong>múltiples extensiones propias</strong>, como CPTs, temas hijos, pestañas personalizadas, roles y capacidades específicos, etc.</p>",
             techlist: [
                 "WordPress",
                 "WooCommerce",
@@ -97,19 +97,19 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "WordPress installer",
+                    title: "Instalador de WordPress",
                     href: "https://github.com/dgltorress/proyectos-grado/tree/master/GameBox",
                     external: true
                 }
             ],
             img: {
                 src: "img/gb_store.jpg",
-                aria: "GameBox store page"
+                aria: "Página de la tienda de GameBox"
             }
         },
         {
             title: "Against All",
-            description: "<p>An <strong>online, multiplayer, terminal-based game</strong> that sets a number of players against each other.</p><p>Includes a <strong>RESTful API</strong> that serves a match's data, along with a separate <strong>front end</strong> to spectate it from any browser.</p>",
+            description: "<p>Un <strong>juego multijugador <em lang=\"en\">online</em></strong> de terminal que enfrenta a un número de jugadores en un todos contra todos.</p><p>Incluye un <strong>API REST</strong> que sirve los datos de la partida, así como un <strong><em lang=\"en\">front end</em></strong> que permite monitorizarla desde el navegador.</p>",
             techlist: [
                 "Java",
                 "Sockets",
@@ -120,24 +120,24 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "Online version (front end only)",
+                    title: "Versión online (sólo front end)",
                     href: "projs/against-all-front/index.html",
                     external: false
                 },
                 {
-                    title: "Repository",
+                    title: "Repositorio",
                     href: "https://github.com/dgltorress/proyectos-grado/tree/master/AgainstAll_v2.0",
                     external: true
                 }
             ],
             img: {
                 src: "img/aa_frontp.jpg",
-                aria: "Against All's front end"
+                aria: "Front end de Against All"
             }
         },
         {
             title: "Pictures & Images",
-            description: "<p>A minimum viable product for a website that hosts <strong>albums and pictures</strong>.</p><p>It has a functional <strong>multi-user system</strong>, allowing each one to <strong>upload</strong> their own content and <strong>sort</strong> it as they please.</p>",
+            description: "<p>Un producto mínimo viable para un sitio web de <strong>gestión de álbumes y fotos</strong>.</p><p>Cuenta con un <strong>sistema de usuarios</strong> funcional, donde cada usuario puede <strong>subir sus propias fotos</strong> y categorizarlas en álbumes.</p>",
             techlist: [
                 "PHP",
                 "MySQL",
@@ -147,39 +147,39 @@ export const projects = {
             ],
             links: [
                 {
-                    title: "Online version (front end only)",
+                    title: "Versión online (sólo front end)",
                     href: "projs/pi-front/index.html",
                     external: false
                 },
                 {
-                    title: "Repository",
+                    title: "Repositorio",
                     href: "https://github.com/dgltorress/proyectos-grado/tree/master/PicturesAndImagesFull",
                     external: true
                 }
             ],
             img: {
                 src: "img/pi_home.jpg",
-                aria: "Pictures & Images' home page"
+                aria: "Página principal de Pictures & Images"
             }
         }
     ],
     own: [
         {
-            title: "Random File Opener",
-            description: "<p>A simple command-line tool for Windows useful for <strong>opening random files</strong>.</p><p>Performs recursive indexing from the directory where it is run, allows filtering by extension and prevents excessive path scans by default.</p>",
+            title: "Abridor aleatorio de archivos",
+            description: "<p>Una herramienta de línea de comandos simple para Windows útil para <strong>abrir archivos aleatorios</strong>.</p><p>Realiza una indexación recursiva desde el directorio desde el que se ejecuta, permite filtrar por extensiones e impide que se escanee una cantidad excesiva de rutas por defecto..</p>",
             techlist: [
                 "C++"
             ],
             links: [
                 {
-                    title: "Repository",
+                    title: "Repositorio",
                     href: "https://github.com/dgltorress/rfopener",
                     external: true
                 }
             ],
             img: {
                 src: "img/rfopener.png",
-                aria: "Command-line demo"
+                aria: "Demostración en línea de comandos"
             }
         }
     ]

@@ -1,73 +1,73 @@
 export const experiences = {
     work: [
         {
-            title: 'Web developer intern',
+            title: 'Desarrollador web en prácticas',
             time: {
                 start: {
-                    title: 'Jun 2023',
+                    title: 'jun. 2023',
                     datetime: '2023-06'
                 }
             },
             url: {
                 title: 'NTT DATA',
                 href: 'https://es.nttdata.com/',
-                aria: 'Official page of NTT DATA'
+                aria: 'Página oficial de NTT DATA'
             },
             img: {
                 src: 'img/logo-nttdata.jpg',
-                aria: 'Logo of NTT DATA'
+                aria: 'Logo de NTT DATA'
             },
-            footerHTML: '<p>Providing support on various development tasks.</p>'
+            footerHTML: '<p>Colaboración en varias tareas de desarrollo.</p>'
         }
     ],
     education: [
         {
-            title: 'Bachelor\'s in Multimedia Engineering',
+            title: 'Grado en Ingeniería Multimedia',
             time: {
                 start: {
-                    title: 'Sep 2019',
+                    title: 'sept. 2019',
                     datetime: '2019-09'
                 },
                 end: {
-                    title: 'Aug 2023',
+                    title: 'ago. 2023',
                     datetime: '2023-08'
                 }
             },
             url: {
-                title: 'University of Alicante',
+                title: 'Universidad de Alicante',
                 href: 'https://web.ua.es/en/grados/grado-en-ingenieria-multimedia/degree-in-multimedia-engineering.html',
-                aria: 'Official page of the Bachelor\'s in Multimedia Engineering'
+                aria: 'Página oficial del Grado en Ingeniería Multimedia'
             },
             img: {
                 src: 'img/e_ua.jpg',
-                aria: 'Logo of the University of Alicante'
+                aria: 'Logo de la Universidad de Alicante'
             },
-            footerHTML: '<p>Currently specializing in Content Management.</p>'
+            footerHTML: '<p>Especializándose en Gestión de Contenidos.</p>'
         },
         {
-            title: 'High School Diploma',
+            title: 'Bachillerato',
             time: {
                 end: {
-                    title: 'Jun 2019',
+                    title: 'jun. 2019',
                     datetime: '2019-06'
                 }
             },
             url: {
-                title: 'Alicante Salesian School',
+                title: 'Colegio Salesianos Alicante',
                 href: 'https://alicante.salesianos.edu/',
-                aria: 'Official page of Alicante Salesian School'
+                aria: 'Página oficial del Colegio Salesianos Alicante'
             },
             img: {
                 src: 'img/e_salesianos.png',
-                aria: 'Logo of Alicante Salesian School'
+                aria: 'Logo del Colegio Salesianos Alicante'
             },
-            footerHTML: '<p>Elective Social Studies subjects.</p>'
+            footerHTML: '<p>Itinerario de Ciencias Sociales.</p>'
         },
         {
             title: 'B2 First',
             time: {
                 end: {
-                    title: 'Dec 2016',
+                    title: 'dic. 2016',
                     datetime: '2016-12'
                 }
             },
@@ -78,9 +78,9 @@ export const experiences = {
             },
             img: {
                 src: 'img/e_cambridge.jpg',
-                aria: 'Logo of Cambridge Assessment International Education'
+                aria: 'Logo de la Cambridge Assessment International Education'
             },
-            footerHTML: '<p>Scored 177 — Credential ID: 16CES3970036ID</p>'
+            footerHTML: '<p>Puntuación de 177 — ID de la credencial: 16CES3970036ID</p>'
         }
     ]
 };
