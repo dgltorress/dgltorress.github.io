@@ -377,18 +377,18 @@ div.experience,div.bproject,div.education{
 
     font-weight: bold;
 
-    border-radius:10rem;
+    border-radius: 10rem;
     box-shadow: 0 .4rem .4rem .1rem var(--c0);
 
-    padding:1.5rem 3rem;
-    margin:.5rem;
+    padding: 1.5rem 2rem;
+    margin: .5rem;
 }
 .alink:hover{
     background-color: var(--c01);
     transition: all ease-in-out .1s;
 }
 .ainternal::after{
-    content: "\27A7";
+    content: "\25B8";
     transition: all ease-in-out .1s;
 
     margin-left: .75rem;
@@ -463,16 +463,16 @@ article.bproject>h4{
     font-weight: bold;
     margin-top: 0;
 }
-article.bproject>a{
+article.bproject div>a{
     width: max-content;
     display: block;
-    margin-top: 3rem;
-    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 
     margin-inline:auto;
 }
-article.bproject>a *{
-    font-size: 1.3rem;
+article.bproject div>a *{
+    font-size: 1.2rem;
 }
 
 /* -------------------- */
