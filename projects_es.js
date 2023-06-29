@@ -165,8 +165,8 @@ export const projects = {
     ],
     own: [
         {
-            title: "Abridor aleatorio de archivos",
-            description: "<p>Una herramienta de línea de comandos simple para Windows útil para <strong>abrir archivos aleatorios</strong>.</p><p>Realiza una indexación recursiva desde el directorio desde el que se ejecuta, permite filtrar por extensiones e impide que se escanee una cantidad excesiva de rutas por defecto..</p>",
+            title: "Abridor de archivos aleatorios",
+            description: "<p>Una herramienta de línea de comandos simple para Windows, útil para <strong>abrir archivos aleatorios</strong>.</p><p>Realiza una indexación recursiva desde el directorio desde el que se ejecuta, permite filtrar por extensiones e impide que se escanee una cantidad excesiva de rutas por defecto.</p>",
             techlist: [
                 "C++"
             ],
