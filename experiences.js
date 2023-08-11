@@ -6,6 +6,10 @@ export const experiences = {
                 start: {
                     title: 'Jun 2023',
                     datetime: '2023-06'
+                },
+                end: {
+                    title: 'Aug 2023',
+                    datetime: '2023-08'
                 }
             },
             url: {
@@ -17,7 +21,7 @@ export const experiences = {
                 src: 'img/logo-nttdata.jpg',
                 aria: 'Logo of NTT DATA'
             },
-            footerHTML: '<p>Providing support on various development tasks.</p>'
+            footerHTML: '<p>Provided support on various development tasks.</p>'
         }
     ],
     education: [
@@ -29,8 +33,8 @@ export const experiences = {
                     datetime: '2019-09'
                 },
                 end: {
-                    title: 'Aug 2023',
-                    datetime: '2023-08'
+                    title: 'Sep 2023',
+                    datetime: '2023-09'
                 }
             },
             url: {
@@ -42,7 +46,7 @@ export const experiences = {
                 src: 'img/e_ua.jpg',
                 aria: 'Logo of the University of Alicante'
             },
-            footerHTML: '<p>Currently specializing in Content Management.</p>'
+            footerHTML: '<p>Specialized in Content Management.</p>'
         },
         {
             title: 'High School Diploma',

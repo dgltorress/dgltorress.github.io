@@ -6,6 +6,10 @@ export const experiences = {
                 start: {
                     title: 'jun. 2023',
                     datetime: '2023-06'
+                },
+                end: {
+                    title: 'ago. 2023',
+                    datetime: '2023-08'
                 }
             },
             url: {
@@ -29,8 +33,8 @@ export const experiences = {
                     datetime: '2019-09'
                 },
                 end: {
-                    title: 'ago. 2023',
-                    datetime: '2023-08'
+                    title: 'sept. 2023',
+                    datetime: '2023-09'
                 }
             },
             url: {
@@ -42,7 +46,7 @@ export const experiences = {
                 src: 'img/e_ua.jpg',
                 aria: 'Logo de la Universidad de Alicante'
             },
-            footerHTML: '<p>Especializándose en Gestión de Contenidos.</p>'
+            footerHTML: '<p>Especialización en Gestión de Contenidos.</p>'
         },
         {
             title: 'Bachillerato',
