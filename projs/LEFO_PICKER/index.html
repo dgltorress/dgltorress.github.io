@@ -1,0 +1,56 @@
+<html lang="es">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="generator" content="Visual Studio Code">
+        <meta name="author" content="Daniel Giménez López-Torres">
+        <meta name="keywords" content="Left 4 Dead 2, Steam, Valve, Aleatorio, Campaña">
+        <meta name="description" content="Escoge una campaña aleatoria de Left 4 Dead 2 (actualización de la comunidad)">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lefo Picker</title>
+        <!--Icono-->
+        <link rel="icon" href="logo.png">
+        <!--CSS-->
+        <link rel="stylesheet" href="estilo.css" title="Por defecto">
+        <!--Fuentes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Piedra:wght@400;700&display=swap" rel="stylesheet">
+        <!--JavaScript-->
+        <script src="codigo.js"></script>
+    </head>
+    <body>
+        <script>elegirFondo();document.body.firstElementChild.remove();</script>
+        <header>
+            <img src="logoBig.png" alt="Lefo Picker" title="Lefo Picker">
+        </header>
+        <div>
+            <aside>
+                <h2>Campañas</h2>
+                <section>
+                    <h3>Left 4 Dead 2</h3>
+                    <ul></ul>
+                </section>
+                <section>
+                    <h3>Left 4 Dead</h3>
+                    <ul></ul>
+                    <script id="tmpScript">listarCampaigns();listarDamit();document.getElementById('tmpScript').remove();</script>
+                </section>
+            </aside>
+            <main>
+                <h1>Campaña elegida</h1>
+                <figure id="elegida">
+                    <img src="default.webp" alt="Póster de la campaña &quot;???&quot;" title="???">
+                    <figcaption>???</figcaption>
+                    <p>???</p>
+                </figure>
+                <button type="button" onclick="obtenerCampaignAleatoria();">
+                    <img style="height:1em;vertical-align:middle;filter:invert(1);" src="img/dice.svg" alt="Dados">
+                    Aleatoria
+                </button>
+            </main>
+        </div>
+        <footer>&copy; <script>document.write( new Date().getFullYear() );</script> <a href="https://dgltorress.github.io/" target="_blank">Daniel Giménez López-Torres</a></footer>
+    </body>
+</html>
