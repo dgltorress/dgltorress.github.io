@@ -9,7 +9,7 @@ export const projects = {
             techlist: [
                 "Angular",
                 "Ionic",
-                "Node",
+                "Node.js",
                 "Express",
                 "REST",
                 "MariaDB"
@@ -36,7 +36,7 @@ export const projects = {
             description: "<p>Una herramienta web multiplataforma orientada a <strong>ayudar a estudiantes a comprender conceptos abstractos de física</strong> permitiendo a los profesores crear <strong>simulaciones de problemas del libro en tiempo real</strong> en un <strong>entorno tridimensional</strong>.</p><p>Esta aplicación se creó junto a cuatro compañeros de la carrera como parte de un <strong>proyecto grupal</strong>.</p><p>Entre sus peculiaridades, el equipo asumió <strong>toda la responsabilidad sobre la securización de nuestro servidor</strong> y <strong>se creó un motor 3D desde cero</strong> utilizando únicamente WebGL puro y una librería matemática.</p>",
             techlist: [
                 "Angular",
-                "Node",
+                "Node.js",
                 "Express",
                 "REST",
                 "MongoDB",

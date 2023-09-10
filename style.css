@@ -519,10 +519,46 @@ div.experience>article>footer{
 }
 
 div.work{
-    border-color: var(--c7) !important;
+    border-color: var(--c6);
 }
 div.education{
-    border-color: var(--c3) !important;
+    border-color: var(--c3);
+}
+
+span.credential-id{
+    display: inline-flex;
+    flex-direction: column;
+
+    font-size: 1.1rem;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-inline: 1em;
+}
+span.credential-id::after{
+    font-size: 0.9rem;
+    font-family: 'Nunito Sans',Arial,Helvetica,sans-serif;
+    font-weight: normal;
+
+    position: absolute;
+    opacity: .5;
+
+    text-align: center;
+    margin-top: 2.25em;
+}
+span.credential-copied::after{
+    content: "✓ Copied to clipboard";
+}
+span.credential-failed::after{
+    content: "✗ Failed to copy";
+}
+span.credential-copiada::after{
+    content: "✓ Copiada al portapapeles";
+}
+span.credential-fallada::after{
+    content: "✗ Fallo al copiar";
 }
 
 /* -------------------- */
@@ -534,6 +570,7 @@ ul.techlist{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
     list-style: none;

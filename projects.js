@@ -9,7 +9,7 @@ export const projects = {
             techlist: [
                 "Angular",
                 "Ionic",
-                "Node",
+                "Node.js",
                 "Express",
                 "REST",
                 "MariaDB"
@@ -36,7 +36,7 @@ export const projects = {
             description: "<p>A cross-platform web tool aimed at <strong>helping students grasp abstract physics concepts</strong> by allowing teachers to easily create <strong>real-time simulations of textbook problems</strong> in a <strong>three-dimensional environment</strong>.</p><p>This application was co-created with four fellow students as part of a <strong>team project</strong>.</p><p>Among other particularities, the team assumed <strong>full responsibility over the security of our servers</strong> and <strong>a 3D engine was created from scratch</strong> using only pure WebGL and a math library.</p>",
             techlist: [
                 "Angular",
-                "Node",
+                "Node.js",
                 "Express",
                 "REST",
                 "MongoDB",

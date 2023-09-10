@@ -1,7 +1,30 @@
 export const experiences = {
     work: [
         {
-            title: 'Web developer intern',
+            title: 'Junior Web Developer',
+            time: {
+                start: {
+                    title: 'Sep 2023',
+                    datetime: '2023-09'
+                },
+                end: {
+                    title: 'Present'
+                }
+            },
+            url: {
+                title: 'NTT DATA',
+                href: 'https://es.nttdata.com/',
+                aria: 'NTT DATA Spain Group'
+            },
+            img: {
+                src: 'img/logo-nttdata.jpg',
+                aria: 'Logo of NTT DATA'
+            },
+            footerHTML: '<p>Contributing in the development and maintenance of web solutions for insurance entities.</p>',
+            color: '#6785C1'
+        },
+        {
+            title: 'Web Developer Intern',
             time: {
                 start: {
                     title: 'Jun 2023',
@@ -15,13 +38,14 @@ export const experiences = {
             url: {
                 title: 'NTT DATA',
                 href: 'https://es.nttdata.com/',
-                aria: 'Official page of NTT DATA'
+                aria: 'NTT DATA Spain Group'
             },
             img: {
                 src: 'img/logo-nttdata.jpg',
                 aria: 'Logo of NTT DATA'
             },
-            footerHTML: '<p>Provided support on various development tasks.</p>'
+            footerHTML: '<p>Provided support on various development tasks.</p>',
+            color: '#6785C1'
         }
     ],
     education: [
@@ -33,8 +57,8 @@ export const experiences = {
                     datetime: '2019-09'
                 },
                 end: {
-                    title: 'Sep 2023',
-                    datetime: '2023-09'
+                    title: 'Jul 2023',
+                    datetime: '2023-07'
                 }
             },
             url: {
@@ -46,7 +70,8 @@ export const experiences = {
                 src: 'img/e_ua.jpg',
                 aria: 'Logo of the University of Alicante'
             },
-            footerHTML: '<p>Specialized in Content Management.</p>'
+            footerHTML: '<p>Specialized in Content Management.',
+            color: '#005682'
         },
         {
             title: 'High School Diploma',
@@ -65,7 +90,8 @@ export const experiences = {
                 src: 'img/e_salesianos.png',
                 aria: 'Logo of Alicante Salesian School'
             },
-            footerHTML: '<p>Elective Social Studies subjects.</p>'
+            footerHTML: '<p>Elective Social Studies subjects.</p>',
+            color: '#DC001B'
         },
         {
             title: 'B2 First',
@@ -84,7 +110,8 @@ export const experiences = {
                 src: 'img/e_cambridge.jpg',
                 aria: 'Logo of Cambridge Assessment International Education'
             },
-            footerHTML: '<p>Scored 177 — Credential ID: 16CES3970036ID</p>'
+            footerHTML: '<p>Credential ID: <span class="credential-id">16CES3970036ID</span></p>',
+            color: '#FFD100'
         }
     ]
 };

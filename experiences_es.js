@@ -1,7 +1,30 @@
 export const experiences = {
     work: [
         {
-            title: 'Desarrollador web en prácticas',
+            title: 'Desarrollador de aplicaciones web junior',
+            time: {
+                start: {
+                    title: 'sept. 2023',
+                    datetime: '2023-09'
+                },
+                end: {
+                    title: 'Actualidad'
+                }
+            },
+            url: {
+                title: 'NTT DATA',
+                href: 'https://es.nttdata.com/',
+                aria: 'NTT DATA Spain Group'
+            },
+            img: {
+                src: 'img/logo-nttdata.jpg',
+                aria: 'Logo de NTT DATA'
+            },
+            footerHTML: '<p>Colaborando en el desarrollo y mantenimiento de soluciones web para entidades aseguradoras.</p>',
+            color: '#6785C1'
+        },
+        {
+            title: 'Desarrollador de aplicaciones web en prácticas',
             time: {
                 start: {
                     title: 'jun. 2023',
@@ -15,13 +38,14 @@ export const experiences = {
             url: {
                 title: 'NTT DATA',
                 href: 'https://es.nttdata.com/',
-                aria: 'Página oficial de NTT DATA'
+                aria: 'Grupo NTT DATA Spain'
             },
             img: {
                 src: 'img/logo-nttdata.jpg',
                 aria: 'Logo de NTT DATA'
             },
-            footerHTML: '<p>Colaboración en varias tareas de desarrollo.</p>'
+            footerHTML: '<p>Colaboración en varias tareas de desarrollo.</p>',
+            color: '#6785C1'
         }
     ],
     education: [
@@ -33,8 +57,8 @@ export const experiences = {
                     datetime: '2019-09'
                 },
                 end: {
-                    title: 'sept. 2023',
-                    datetime: '2023-09'
+                    title: 'jul. 2023',
+                    datetime: '2023-07'
                 }
             },
             url: {
@@ -46,7 +70,8 @@ export const experiences = {
                 src: 'img/e_ua.jpg',
                 aria: 'Logo de la Universidad de Alicante'
             },
-            footerHTML: '<p>Especialización en Gestión de Contenidos.</p>'
+            footerHTML: '<p>Especialización en Gestión de Contenidos.',
+            color: '#005682'
         },
         {
             title: 'Bachillerato',
@@ -65,7 +90,8 @@ export const experiences = {
                 src: 'img/e_salesianos.png',
                 aria: 'Logo del Colegio Salesianos Alicante'
             },
-            footerHTML: '<p>Itinerario de Ciencias Sociales.</p>'
+            footerHTML: '<p>Itinerario de Ciencias Sociales.</p>',
+            color: '#DC001B'
         },
         {
             title: 'B2 First',
@@ -84,7 +110,8 @@ export const experiences = {
                 src: 'img/e_cambridge.jpg',
                 aria: 'Logo de la Cambridge Assessment International Education'
             },
-            footerHTML: '<p>Puntuación de 177 — ID de la credencial: 16CES3970036ID</p>'
+            footerHTML: '<p>ID de la credencial: <span class="credential-id">16CES3970036ID</span></p>',
+            color: '#FFD100'
         }
     ]
 };

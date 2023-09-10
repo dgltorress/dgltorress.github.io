@@ -6,7 +6,7 @@
 
 import { projects } from './projects_es.js';
 import { experiences } from './experiences_es.js';
-import { expandImage, writeYear, loadProjects, loadExperiences } from './code.js';
+import { expandImage, writeYear, loadProjects, loadExperiences, copyableCredentials } from './code.js';
 
 // Code to execute on page load.
 window.onload = () => {
@@ -69,4 +69,10 @@ window.onload = () => {
             }
         ); 
     }
+
+    // Makes credentials copyable
+    copyableCredentials(
+        'credential-copiada',
+        'credential-fallada'
+    );
 };

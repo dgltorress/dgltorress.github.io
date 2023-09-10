@@ -7,7 +7,10 @@
 import { projects } from './projects.js';
 import { experiences } from './experiences.js';
 
+const now = new Date();
+
 const mainShowcaseName = 'mainShowcase';
+const notificationTimeout = 1000;
 
 /**
  * Creates a simple expanded view of an image (must be a `<img>` tag).
@@ -55,7 +58,7 @@ const writeYear = ( timeElement ) => {
     if( timeElement &&
         timeElement.tagName === 'TIME' ){
         // Gets the current year from the client's machine.
-        const curYear = new Date().getFullYear().toString();
+        const curYear = now.getFullYear().toString();
 
         // Sets it.
         timeElement.innerText = curYear;
@@ -203,7 +206,7 @@ const loadExperiences = (
                     const end = document.createElement( 'TIME' );
 
                     end.textContent = experienceTime.end.title;
-                    end.setAttribute( 'datetime', experienceTime.end.datetime );
+                    end.setAttribute( 'datetime', experienceTime.end.datetime ?? now.toISOString() );
 
                     timeWrapper.appendChild( end );
                 }
@@ -233,6 +236,10 @@ const loadExperiences = (
                 console.error( '(loadExperiences) ERROR: Unable to fetch url from experience' );
             }
 
+            if( experience.color ){
+                container.style.borderColor = experience.color;
+            }
+
             footer.innerHTML = experience.footerHTML;
 
             // Append elements
@@ -244,6 +251,40 @@ const loadExperiences = (
         
     } else {
         console.error( '(loadExperiences) ERROR: Expected a section tag, got ', experiencesSection );
+    }
+}
+
+/**
+ * Make credentials copyable.
+ * 
+ * @param {string} className Success copy class name.
+ * @param {string} failedClassName Failed copy class name.
+ */
+const copyableCredentials = (
+    className,
+    failedClassName = ''
+) => {
+    const credentials = document.getElementsByClassName( 'credential-id' );
+    for( const credential of credentials ){
+        credential.addEventListener(
+            'click',
+            () => {
+                navigator.clipboard.writeText( credential.textContent ).then(
+                    () => {
+                        credential.classList.add( className );
+                        setTimeout( () => {
+                            credential.classList.remove( className );
+                        }, notificationTimeout );
+                    },
+                    () => {
+                        credential.classList.add( failedClassName );
+                        setTimeout( () => {
+                            credential.classList.remove( failedClassName );
+                        }, notificationTimeout );
+                    },
+                );
+            }
+        ); 
     }
 }
 
@@ -309,6 +350,12 @@ window.onload = () => {
             }
         ); 
     }
+
+    // Makes credentials copyable
+    copyableCredentials(
+        'credential-copied',
+        'credential-failed'
+    );
 };
 
-export { expandImage, writeYear, loadProjects, loadExperiences };
+export { expandImage, writeYear, loadProjects, loadExperiences, copyableCredentials };
